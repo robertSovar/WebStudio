@@ -391,7 +391,6 @@ ul a:hover {
   );
   display: flex;
   justify-content: center;
-  width: 100%;
   width: var(--section-width);
 }
 
@@ -921,7 +920,7 @@ ul a:hover {
   }
 
   .global-header {
-    align-self: flex-start;
+    justify-content: flex-start;
   }
 
   .global-header .navigation-menu {
@@ -952,8 +951,8 @@ ul a:hover {
 
   .global-header .menu-section {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
   }
 
   .global-header .menu-section:hover,
@@ -1027,6 +1026,46 @@ ul a:hover {
     margin-top: 60px;
     margin-bottom: 30px;
   }
+
+  .team-member-panel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .team-member-panel .card {
+    width: 450px;
+    height: 622px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .regular-costumers-section {
+    width: 450px;
+    height: 399px;
+    margin-bottom: 60px;
+  }
+
+  .regular-costumers-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .regular-costumers-section .logo-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .logo-section .logo {
+    width: 210px;
+    height: 92px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Tablet */
@@ -1035,9 +1074,6 @@ ul a:hover {
     width: 768px;
     height: 3253px;
     flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .global-header .menu-section,
@@ -1100,6 +1136,59 @@ ul a:hover {
 
   .what-we-do-section {
     display: none;
+  }
+
+  .our-team-section {
+    width: 768px;
+    height: 1285px;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  .our-team-section h2 {
+    text-align: center;
+    width: 768px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .team-member-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .team-member-panel .card {
+    width: 354px;
+    height: 536px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .regular-costumers-section {
+    width: 738px;
+    height: 277px;
+    margin-bottom: 60px;
+    align-items: center;
+  }
+
+  .regular-costumers-section h2 {
+    text-align: center;
+  }
+
+  .regular-costumers-section .logo-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo-section .logo {
+    width: 226px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
