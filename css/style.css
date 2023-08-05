@@ -20,6 +20,11 @@
 }
 
 /* General area */
+html {
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
 body,
 body :visited {
   font-family: "Roboto", sans-serif;
@@ -383,25 +388,19 @@ ul a:hover {
   transition: color, var(--transition-value);
 }
 
-.bottom-section {
+.bottom-contact-details {
+  width: var(--section-width);
+  height: 251px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 94px;
+  flex-shrink: 0;
   background: linear-gradient(
     to top,
     var(--footer-background-color),
     var(--footer-background-color)
   );
-  display: flex;
-  justify-content: center;
-  width: var(--section-width);
-}
-
-.bottom-contact-details {
-  width: 1200px;
-  height: 251px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 94px;
-  flex-shrink: 0;
 }
 
 .bottom-contact-details .bottom-studio-text {
@@ -421,10 +420,10 @@ ul a:hover {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.42px;
-  margin-bottom: 12px;
 }
 
 .bottom-contact-details .phone-number {
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 
@@ -525,7 +524,7 @@ ul a:hover {
   letter-spacing: 0.96px;
   cursor: pointer;
   margin-top: 18px;
-  position: absolute;
+  position: relative;
 }
 
 .subscribe-section .subscribe-icon {
@@ -912,7 +911,7 @@ ul a:hover {
 
   body {
     width: 480px;
-    height: 2761px;
+    height: 5458px;
   }
 
   .studio-layout-page {
@@ -921,6 +920,7 @@ ul a:hover {
 
   .global-header {
     justify-content: flex-start;
+    position: relative;
   }
 
   .global-header .navigation-menu {
@@ -1066,10 +1066,44 @@ ul a:hover {
     justify-content: center;
     align-items: center;
   }
+
+  .bottom-contact-details {
+    width: 480px;
+    height: 604px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .webstudio-section .bottom {
+    margin: 0;
+  }
+
+  .bottom-contact-details .work-place {
+    margin-top: 28px;
+  }
+
+  .find-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .find-us p {
+    margin-bottom: 20px;
+  }
+
+  .subscribe-section input {
+    width: 450px;
+    margin-top: 20px;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+  /* Studio page */
   body {
     width: 768px;
     height: 3253px;
@@ -1194,9 +1228,9 @@ ul a:hover {
 
 /* Desktop */
 @media screen and (min-width: 1158px) {
+  /* Studio page */
   body {
     width: 1600px;
-    height: 2930px;
     flex-shrink: 0;
     margin: auto;
   }
