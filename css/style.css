@@ -199,7 +199,7 @@ ul a:hover {
 }
 
 .hero-section-area {
-display: flex;
+  display: flex;
 }
 
 .hero-section-area .icons-list {
@@ -908,12 +908,12 @@ display: flex;
 }
 
 /* Mobile First strategy */
-@media screen and (min-width: 480px) and (max-width: 787px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   /* Studio page */
 
   body {
     width: 480px;
-    height: 604px;
+    height: 2761px;
   }
 
   .studio-layout-page {
@@ -1010,10 +1010,22 @@ display: flex;
     height: 120px;
   }
 
- 
-
   .what-we-do-section {
     display: none;
+  }
+
+  .our-team-section {
+    width: 480px;
+    height: 2761px;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  .our-team-section h2 {
+    text-align: center;
+    width: 480px;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1021,9 +1033,8 @@ display: flex;
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   body {
     width: 768px;
-    height: 464px;
+    height: 3253px;
     flex-shrink: 0;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1049,6 +1060,44 @@ display: flex;
     }
   }
 
+  .hero-section h1 {
+    width: 360px;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 1.56px;
+  }
+
+  .hero-container {
+    width: 738px;
+    height: 507px;
+    margin: 15px;
+  }
+
+  .hero-section-area {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 30px;
+  }
+
+  .hero-section-icon-and-text {
+    flex-direction: column;
+    gap: 30px;
+    width: 354px;
+    height: 251px;
+    flex-shrink: 0;
+  }
+
+  .hero-section-area .icons-list {
+    width: 354px;
+    height: 120px;
+  }
+
+  .text-board-section h3 {
+    text-align: start;
+    margin: 0;
+  }
+
   .what-we-do-section {
     display: none;
   }
@@ -1063,6 +1112,9 @@ display: flex;
     margin: auto;
   }
 
+  .studio-layout-page {
+    gap: 94px;
+  }
   .global-header {
     align-self: center;
   }
