@@ -17,9 +17,49 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Menu toggle for mobile -->
+    <div class="js-menu-container">
+      <button class="js-close-menu">&times;</button>
+      <nav class="nav-menu-container">
+        <ul class="navigation-menu">
+          <li class="header-link">
+            <a href="index.html">Studio</a>
+          </li>
+          <li class="header-link">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="header-link">
+            <a href="contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="top-contact-details">
+        <div class="phone-number">
+          <span>
+            <a href="tel:+12127724150"> +1 212 772 4150 </a>
+          </span>
+        </div>
+        <div class="mail-address">
+          <span>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </span>
+        </div>
+      </div>
+
+      <ul class="social-titles">
+        <li>Instagram</li>
+        <span class="break-line"></span>
+        <li>Twitter</li>
+        <span class="break-line"></span>
+        <li>Facebook</li>
+        <span class="break-line"></span>
+        <li>LinkedIn</li>
+      </ul>
+    </div>
     <!-- Header section -->
     <header class="global-header">
-      <button class="menu-section">
+      <button class="menu-section js-open-menu">
         <svg>
           <use href="./images/icons.svg#icon-menuButton"></use>
         </svg>
@@ -673,7 +713,7 @@
         <button class="close-button" data-modal-close>&times;</button>
       </div>
     </div>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
