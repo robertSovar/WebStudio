@@ -911,11 +911,12 @@ ul a:hover {
 
 /* Mobile First strategy */
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  /* Studio page */
+  /* Studio mobile page */
 
   body {
     width: 480px;
     height: 5458px;
+    overflow-x: hidden;
   }
 
   .js-menu-container {
@@ -930,7 +931,6 @@ ul a:hover {
     right: 0;
     background-color: #fff;
     width: 480px;
-    height: 796px;
     z-index: 1;
   }
 
@@ -1242,15 +1242,58 @@ ul a:hover {
     line-height: 24px;
     letter-spacing: 0.36px;
   }
+
+  /* Portfolio mobile page */
+
+  .button-menu-section {
+    width: 274px;
+    height: 91px;
+    flex-shrink: 0;
+    margin-top: 66px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .button-menu-section .button {
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 15px;
+  }
+
+  .button .web-button {
+    width: 100px;
+    height: 38px;
+  }
+
+  .photo-section-board {
+    display: flex;
+  }
+
+  .photo-section-board .album-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 450px;
+    height: 100%;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+  .photo-section-board .photo-card {
+    width: 450px;
+    height: 404px;
+  }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  /* Studio page */
+  /* Studio tablet page */
   body {
     width: 768px;
-    height: 3253px;
     flex-shrink: 0;
+    overflow-x: hidden;
   }
 
   .js-menu-container {
@@ -1427,11 +1470,60 @@ ul a:hover {
     top: 0;
     left: 130px;
   }
+
+  /* Portfolio tablet page */
+
+  body {
+    width: 768px;
+    height: 2908px;
+    flex-shrink: 0;
+  }
+
+  .button-menu-section {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-menu-section .button {
+    margin: 0;
+    margin-left: 8px;
+    margin-top: 15px;
+  }
+
+  .photo-section-board {
+    display: flex;
+  }
+
+  .photo-section-board .album-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 768px;
+    height: 100%;
+    margin-bottom: 60px;
+  }
+  .photo-section-board .photo-card {
+    width: 350px;
+  }
+
+  .photo-section-board .photo-card .animation img {
+    object-fit: contain;
+  }
+
+  .photo-section-board .photo-card {
+    width: 354px;
+    height: 440px;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1158px) {
-  /* Studio page */
+  /* Studio desktop page */
   body {
     width: 1600px;
     flex-shrink: 0;
@@ -1461,7 +1553,7 @@ ul a:hover {
 
   .hero-section {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../images/heroBackground-d-1x.jpg");
+      url("../images/heroBackground-d-1x.png");
     width: 1600px;
     height: 600px;
     background-size: 1600px 600px;
