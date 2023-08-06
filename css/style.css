@@ -20,11 +20,7 @@
 }
 
 /* General area */
-html {
-  height: 100%;
-  margin: auto;
-  width: 100%;
-}
+
 body,
 body :visited {
   font-family: "Roboto", sans-serif;
@@ -478,6 +474,10 @@ ul a:hover {
   color: white;
 }
 
+.subscribe-section {
+  display: block;
+}
+
 .subscribe-section input {
   width: 358px;
   flex-shrink: 0;
@@ -525,6 +525,8 @@ ul a:hover {
   cursor: pointer;
   margin-top: 18px;
   position: relative;
+  top: 0;
+  right: 0;
 }
 
 .subscribe-section .subscribe-icon {
@@ -720,10 +722,12 @@ ul a:hover {
   padding: 30px;
 }
 
-/* Modal */
+/* Modal area */
 
 .modal {
   position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -1099,6 +1103,32 @@ ul a:hover {
     width: 450px;
     margin-top: 20px;
   }
+
+  .modal-content {
+    width: 450px;
+    height: 609px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content .form-group input {
+    width: 370px;
+  }
+
+  .modal-content .form-group textarea {
+    width: 370px;
+    height: 120px;
+  }
+  .check-mark ~ .checked-icon ~ .accept-icon {
+    left: 48px;
+    bottom: 130px;
+  }
+
+  .termns-and-conditions-section span {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.36px;
+  }
 }
 
 /* Tablet */
@@ -1116,7 +1146,8 @@ ul a:hover {
   }
 
   .hero-section {
-    background: url("../images/heroBackground-t-1x.png");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/heroBackground-t-1x.png");
     width: 768px;
     height: 400px;
     background-size: 768px 400px;
@@ -1224,6 +1255,61 @@ ul a:hover {
     justify-content: center;
     align-items: center;
   }
+  .bottom-contact-details {
+    width: 768px;
+    height: 464px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    position: relative;
+  }
+
+  .webstudio-section .bottom {
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    left: 115px;
+  }
+
+  .bottom-contact-details .work-place {
+    position: absolute;
+    top: 116px;
+    left: 76px;
+  }
+
+  .find-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 65px;
+    right: 89px;
+  }
+
+  .find-us p {
+    margin-bottom: 20px;
+  }
+
+  .bottom-contact-details .subscribe-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    margin-top: 120px;
+  }
+
+  .subscribe-section input {
+    width: 450px;
+    margin-top: 20px;
+  }
+
+  .subscribe-section button {
+    position: relative;
+    top: 0;
+    left: 130px;
+  }
 }
 
 /* Desktop */
@@ -1252,7 +1338,8 @@ ul a:hover {
   }
 
   .hero-section {
-    background: url("../images/heroBackground-d-1x.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/heroBackground-d-1x.jpg");
     width: 1600px;
     height: 600px;
     background-size: 1600px 600px;
