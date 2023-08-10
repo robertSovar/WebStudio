@@ -1155,7 +1155,7 @@ ul a:hover {
 
   .team-member-panel .card {
     width: 100%;
-    height: 622px;
+    height: auto;
     flex-shrink: 0;
     margin: 0;
   }
