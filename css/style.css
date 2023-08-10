@@ -1172,19 +1172,15 @@ ul a:hover {
   }
 
   .regular-costumers-section .logo-section {
-    width: 100%;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
     gap: 30px;
   }
 
   .logo-section .logo {
     width: 210px;
     height: 92px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .bottom-contact-details {
@@ -1333,11 +1329,10 @@ ul a:hover {
     line-height: 42px;
     letter-spacing: 1.56px;
   }
-
   .hero-container {
     width: 768px;
     height: 507px;
-    margin: 15px;
+    align-self: center;
   }
 
   .hero-section-area {
@@ -1370,17 +1365,18 @@ ul a:hover {
   }
 
   .our-team-section {
-    width: 768px;
-    height: 1285px;
+    width: 100vw;
+    height: auto;
     flex-shrink: 0;
-    flex-direction: column;
+    padding: 60px 15px;
   }
 
   .our-team-section h2 {
     text-align: center;
-    width: 768px;
+    width: 100vw;
     margin-top: 60px;
     margin-bottom: 30px;
+    padding: 15px;
   }
 
   .team-member-panel {
