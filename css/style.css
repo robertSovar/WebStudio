@@ -26,6 +26,7 @@ body :visited {
   font-family: "Roboto", sans-serif;
   color: var(--header-text-color);
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 ul {
